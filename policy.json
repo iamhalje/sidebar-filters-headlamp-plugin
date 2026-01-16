@@ -1,0 +1,14 @@
+{
+    "hideSidebarEntries": ["map", "advancedSearch", "gatewayapi"],
+    "hideRoutes": [
+        "/map",
+        "/advanced-search",
+        "/gateways",
+        "/gatewayclasses",
+        "/httproutes",
+        "/grpcroutes",
+        "/referencegrants",
+        "/backendtlspolicies",
+        "/backendtrafficpolicies"
+    ]
+}

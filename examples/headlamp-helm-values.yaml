@@ -1,0 +1,18 @@
+config:
+  pluginsDir: /build/plugins
+initContainers:
+  - command:
+      - /bin/sh
+      - '-c'
+      - mkdir -p /build/plugins && cp -r /plugins/* /build/plugins/
+    image: halje/sidebar-filters-headlamp-plugin:v0.0.1
+    name: sidebar-filters
+    volumeMounts:
+      - mountPath: /build/plugins
+        name: headlamp-plugins
+volumeMounts:
+  - name: headlamp-plugins
+    mountPath: /build/plugins
+volumes:
+  - name: headlamp-plugins
+    emptyDir: {}
