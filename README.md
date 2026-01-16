@@ -1,0 +1,1 @@
+# sidebar-filters-headlamp-plugin
